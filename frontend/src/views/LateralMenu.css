@@ -1,0 +1,52 @@
+:root{
+  --color-a: #034159;
+  --color-b: #025951;
+  --color-c: #02735E;
+  --color-d: #038C3E;
+  --color-e: #0CF25D;
+}
+
+.lateral-menu {
+    display: flex;
+    flex-direction: column;
+    width: 12vw;
+    background: linear-gradient(45deg, #02735E 0%, #038C3E 100%);
+    padding: 10px;
+    margin-left: 5vw;
+    height: 78vh;
+    border-radius: 1vw;
+    margin-top: 20px;
+  }
+  
+  .menu-button {
+    background-color: var(--color-b);
+    color: white;
+    padding: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    text-align: left;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 2.5vh;
+    font-weight: 600;
+    margin: 2vh;
+    border-radius: 2vh;
+  }
+  
+  .menu-button:hover {
+    background-color: var(--color-e);
+    color: #212529;
+  }
+  
+  .menu-button:active {
+    background-color: #dae0e5;
+    color: #212529;
+  }
+
+@media (max-width: 768px) {
+  .lateral-menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+  }
+}

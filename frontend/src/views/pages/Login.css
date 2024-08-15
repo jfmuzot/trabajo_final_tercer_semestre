@@ -1,0 +1,89 @@
+:root {
+  --color-a: #034159;
+  --color-b: #025951;
+  --color-c: #02735e;
+  --color-d: #038c3e;
+  --color-e: #0cf25d;
+  --input-border: #ddd;
+  --box-shadow: rgba(0, 0, 0, 0.2);
+  --input-focus-border: var(--color-e);
+}
+
+.login-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px var(--box-shadow);
+  background-color: var(--color-b);
+  color: #fff;
+}
+
+.login-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: var(--color-e);
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-container label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.login-container input {
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid var(--input-border);
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.login-container input:focus {
+  border-color: var(--input-focus-border);
+  outline: none;
+}
+
+.login-container button {
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--color-d);
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+  background-color: var(--color-a);
+}
+
+.login-container .button-link {
+  background-color: var(--color-d);
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.login-container .button-link:hover {
+  background-color: var(--color-a);
+}
+
+.login-container .error {
+  color: #ff4c4c;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-align: center;
+}
